@@ -3,14 +3,10 @@ import Hero from "./Hero";
 import Universe from "./Universe";
 import LeftImage from "./LeftImage";
 import RightImage from "./RightImage";
-import Footer from "../Footer";
-import Navbar from "../Navbar";
 
 function ProductPage() {
   return (
     <>
-      <Navbar />
-
       <Hero />
 
       <LeftImage
@@ -63,8 +59,6 @@ function ProductPage() {
       </p>
 
       <Universe />
-
-      <Footer />
     </>
   );
 }
