@@ -1,107 +1,148 @@
-import React from 'react';
+import React from "react";
 
 function Footer() {
-    return ( 
-        <footer className='border-top' style={{backgroundColor:'#fbfbfb'}}>
-        <div className='container  mt-5' >
-            <div className='row mt-5'>
-                <div className='col' style={{marginRight:'3%'}}>
-                    <img src='media/logo.svg' style={{width:'50%'}}></img>
-                     <p>
-                         &copy; 2010 - 2024, Not Zerodha Broking Ltd. All rights reserved.
-                    </p>
-                </div>
-                <div className='col'>
-                    <p>Company</p>
-                    <a href="" style={{textDecoration:"none" , color:'black'}}  >About</a>
-                    <br />
-                    <a href="" style={{textDecoration:"none", color:'black'}} >Products</a>
-                    <br />
-                    <a href="" style={{textDecoration:"none", color:'black'}} >Pricing</a>
-                    <br />
-                    <a href="" style={{textDecoration:"none", color:'black'}} >Referral programme</a>
-                    <br />
-                    <a href="" style={{textDecoration:"none", color:'black'}} >Careers</a>
-                    <br />
-                    <a href="" style={{textDecoration:"none", color:'black'}} >Zerodha.tech</a>
-                    <br />
-                    <a href="" style={{textDecoration:"none", color:'black'}} >Press & media</a>
-                    <br />
-                    <a href="" style={{textDecoration:"none", color:'black'}} >Zerodha cares (CSR)</a>
-                    <br />
-                </div>
-                <div className='col'>
-                    <p>Support</p>
-                    <a href="" style={{textDecoration:"none", color:'black'}} >Contact</a>
-                    <br />
-                    <a href="" style={{textDecoration:"none", color:'black'}} >Support portal</a>
-                    <br />
-                    <a href="" style={{textDecoration:"none", color:'black'}} >Z-Connect blog</a>
-                    <br />
-                    <a href="" style={{textDecoration:"none", color:'black'}} >List of charges</a>
-                    <br />
-                    <a href="" style={{textDecoration:"none", color:'black'}} >Downloads & resources</a>
-                    <br />
-                </div>
-                <div className='col'>
-                    <p>Account</p>
-                     <a href="" style={{textDecoration:"none" , color:'black'}} >Open an account</a>
-                    <br />
-                    <a href="" style={{textDecoration:"none", color:'black'}} >Fund transfer</a>
-                    <br />
-                    <a href="" style={{textDecoration:"none", color:'black'}} >60 day challenge</a>
-                    <br />
-                </div>
-            </div>
-                <div className="mt-5 text-muted " style={{ fontSize: "12px" }}>
+  return (
+    <footer className="border-top" style={{ backgroundColor: "#fbfbfb" }}>
+      <div className="container mt-5">
+        <div className="row mt-5">
+          <div className="col" style={{ marginRight: "3%" }}>
+            <img
+              src="media/logo.svg"
+              alt="Zerodha Logo"
+              style={{ width: "50%" }}
+            />
             <p>
-                Zerodha Broking Ltd.: Member of NSE​ &​ BSE – SEBI Registration no.:
-                INZ000031633 CDSL: Depository services through Zerodha Securities
-                Pvt. Ltd. – SEBI Registration no.: IN-DP-100-2015 Commodity Trading
-                through Zerodha Commodities Pvt. Ltd. MCX: 46025 – SEBI Registration
-                no.: INZ000038238 Registered Address: Zerodha Broking Ltd.,
-                #153/154, 4th Cross, Dollars Colony, Opp. Clarence Public School,
-                J.P Nagar 4th Phase, Bengaluru - 560078, Karnataka, India. For any
-                complaints pertaining to securities broking please write to
-                complaints@zerodha.com, for DP related to dp@zerodha.com. Please
-                ensure you carefully read the Risk Disclosure Document as prescribed
-                by SEBI | ICF
+              &copy; 2010 - 2024, Not Zerodha Broking Ltd. All rights reserved.
             </p>
+          </div>
 
-            <p>
-                Procedure to file a complaint on SEBI SCORES: Register on SCORES
-                portal. Mandatory details for filing complaints on SCORES: Name,
-                PAN, Address, Mobile Number, E-mail ID. Benefits: Effective
-                Communication, Speedy redressal of the grievances
-            </p>
+          <div className="col">
+            <p>Company</p>
 
-            <p>
-                Investments in securities market are subject to market risks; read
-                all the related documents carefully before investing.
-            </p>
+            <a href="/about" style={{ textDecoration: "none", color: "black" }}>
+              About
+            </a>
+            <br />
 
-            <p>
-                "Prevent unauthorised transactions in your account. Update your
-                mobile numbers/email IDs with your stock brokers. Receive
-                information of your transactions directly from Exchange on your
-                mobile/email at the end of the day. Issued in the interest of
-                investors. KYC is one time exercise while dealing in securities
-                markets - once KYC is done through a SEBI registered intermediary
-                (broker, DP, Mutual Fund etc.), you need not undergo the same
-                process again when you approach another intermediary." Dear
-                Investor, if you are subscribing to an IPO, there is no need to
-                issue a cheque. Please write the Bank account number and sign the
-                IPO application form to authorize your bank to make payment in case
-                of allotment. In case of non allotment the funds will remain in your
-                bank account. As a business we don't give stock tips, and have not
-                authorized anyone to trade on behalf of others. If you find anyone
-                claiming to be part of Zerodha and offering such services, please
-                create a ticket here.
-            </p>
-            </div>
+            <a href="/product" style={{ textDecoration: "none", color: "black" }}>
+              Products
+            </a>
+            <br />
+
+            <a href="/pricing" style={{ textDecoration: "none", color: "black" }}>
+              Pricing
+            </a>
+            <br />
+
+            <a href="/" style={{ textDecoration: "none", color: "black" }}>
+              Referral programme
+            </a>
+            <br />
+
+            <a href="/" style={{ textDecoration: "none", color: "black" }}>
+              Careers
+            </a>
+            <br />
+
+            <a href="/" style={{ textDecoration: "none", color: "black" }}>
+              Zerodha.tech
+            </a>
+            <br />
+
+            <a href="/" style={{ textDecoration: "none", color: "black" }}>
+              Press & media
+            </a>
+            <br />
+
+            <a href="/" style={{ textDecoration: "none", color: "black" }}>
+              Zerodha Cares (CSR)
+            </a>
+            <br />
+          </div>
+
+          <div className="col">
+            <p>Support</p>
+
+            <a href="/support" style={{ textDecoration: "none", color: "black" }}>
+              Contact
+            </a>
+            <br />
+
+            <a href="/support" style={{ textDecoration: "none", color: "black" }}>
+              Support Portal
+            </a>
+            <br />
+
+            <a href="/" style={{ textDecoration: "none", color: "black" }}>
+              Z-Connect Blog
+            </a>
+            <br />
+
+            <a href="/" style={{ textDecoration: "none", color: "black" }}>
+              List of Charges
+            </a>
+            <br />
+
+            <a href="/" style={{ textDecoration: "none", color: "black" }}>
+              Downloads & Resources
+            </a>
+            <br />
+          </div>
+
+          <div className="col">
+            <p>Account</p>
+
+            <a href="/signup" style={{ textDecoration: "none", color: "black" }}>
+              Open an Account
+            </a>
+            <br />
+
+            <a href="/" style={{ textDecoration: "none", color: "black" }}>
+              Fund Transfer
+            </a>
+            <br />
+
+            <a href="/" style={{ textDecoration: "none", color: "black" }}>
+              60 Day Challenge
+            </a>
+            <br />
+          </div>
         </div>
-        </footer>
-     );
+
+        <div className="mt-5 text-muted" style={{ fontSize: "12px" }}>
+          <p>
+            Zerodha Broking Ltd.: Member of NSE &amp; BSE – SEBI Registration no.:
+            INZ000031633. CDSL: Depository services through Zerodha Securities
+            Pvt. Ltd. – SEBI Registration no.: IN-DP-100-2015. Commodity Trading
+            through Zerodha Commodities Pvt. Ltd. MCX: 46025 – SEBI Registration
+            no.: INZ000038238. Registered Address: Zerodha Broking Ltd.,
+            #153/154, 4th Cross, Dollars Colony, Opp. Clarence Public School,
+            J.P. Nagar 4th Phase, Bengaluru - 560078, Karnataka, India.
+          </p>
+
+          <p>
+            Procedure to file a complaint on SEBI SCORES: Register on the SCORES
+            portal. Mandatory details include Name, PAN, Address, Mobile Number,
+            and Email ID.
+          </p>
+
+          <p>
+            Investments in the securities market are subject to market risks.
+            Read all related documents carefully before investing.
+          </p>
+
+          <p>
+            Prevent unauthorised transactions in your account. Update your mobile
+            number and email ID with your broker. Receive transaction alerts
+            directly from the Exchange. KYC is a one-time process. If you are
+            applying for an IPO, there is no need to issue a cheque. Zerodha
+            never provides stock tips or authorises anyone to trade on behalf of
+            clients. If someone claims otherwise, please create a support ticket.
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
 }
 
 export default Footer;

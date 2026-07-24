@@ -1,31 +1,36 @@
 import { useState } from "react";
-import { useNavigate, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Login() {
-    const [email, setEmail]       = useState("");
+    const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    const [error, setError]       = useState("");
-    const navigate = useNavigate();
+    const [error, setError] = useState("");
 
     const handleLogin = async () => {
         setError("");
+
         try {
             const res = await fetch(`${process.env.REACT_APP_API_URL}/login`, {
                 method: "POST",
-                headers: { "Content-Type": "application/json" },
+                headers: {
+                    "Content-Type": "application/json",
+                },
                 body: JSON.stringify({ email, password }),
             });
+
             const data = await res.json();
 
-           if (res.ok) {
+            if (res.ok) {
                 localStorage.setItem("token", data.token);
                 localStorage.setItem("name", data.name);
-                 // Redirect to the dashboard app, passing the token through the URL
-                    // so the dashboard (different port = different origin) can pick it up
-                 const dashboardUrl = process.env.REACT_APP_DASHBOARD_URL || "http://localhost:3001";
-                 window.location.href = `${dashboardUrl}/bootstrap?token=${data.token}&name=${encodeURIComponent(data.name)}`;
-        } else {
-            setError(data.message);
+
+                const dashboardUrl =
+                    process.env.REACT_APP_DASHBOARD_URL ||
+                    "http://localhost:3001";
+
+                window.location.href = `${dashboardUrl}/bootstrap?token=${data.token}&name=${encodeURIComponent(data.name)}`;
+            } else {
+                setError(data.message);
             }
         } catch (err) {
             setError("Something went wrong. Try again.");
@@ -44,16 +49,17 @@ function Login() {
                     type="email"
                     className="form-control"
                     placeholder="Enter your email"
-                    onChange={e => setEmail(e.target.value)}
+                    onChange={(e) => setEmail(e.target.value)}
                 />
             </div>
+
             <div className="mb-3">
                 <label className="form-label">Password</label>
                 <input
                     type="password"
                     className="form-control"
                     placeholder="Enter your password"
-                    onChange={e => setPassword(e.target.value)}
+                    onChange={(e) => setPassword(e.target.value)}
                 />
             </div>
 
@@ -62,7 +68,8 @@ function Login() {
             </button>
 
             <p className="mt-3 text-center">
-                Don't have an account? <Link to="/register">Register here</Link>
+                Don't have an account?{" "}
+                <Link to="/register">Register here</Link>
             </p>
         </div>
     );
