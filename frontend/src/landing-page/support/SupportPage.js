@@ -1,18 +1,18 @@
-import React from 'react';
-import Hero from './Hero';
-import TickietCreation from './TickietCreation';
-import Navbar from '../Navbar';
-import Footer from '../Footer';
+import React from "react";
+import Navbar from "../Navbar";
+import Footer from "../Footer";
+import Hero from "./Hero";
+import TickietCreation from "./TickietCreation";
 
 function SupportPage() {
-    return ( 
-        <>
-       
-        <Hero />
-        <TickietCreation />
-        
-        </>
-     );
+  return (
+    <>
+      <Navbar />
+      <Hero />
+      <TickietCreation />
+      <Footer />
+    </>
+  );
 }
 
 export default SupportPage;
