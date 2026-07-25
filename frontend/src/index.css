@@ -52,3 +52,43 @@ code {
   border-radius: 10px;
   border: none;
 }
+
+
+
+
+/* ===== MOBILE RESPONSIVE FIXES ===== */
+@media (max-width: 991.98px) {
+  #navbarSupportedContent {
+    flex-wrap: wrap;
+  }
+
+  #navbarSupportedContent .navbar-nav {
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
+
+  #navbarSupportedContent form {
+    flex-wrap: wrap !important;
+  }
+
+  .nav-link {
+    margin-left: 15px;
+  }
+
+  /* Safety buffer so form content never sits under a wrapped navbar */
+  .container.mt-5 {
+    margin-top: 140px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  #supportWrapper {
+    flex-direction: column;
+    margin: 0 20px;
+  }
+
+  #supportHero input {
+    padding: 15px 20px;
+  }
+}
